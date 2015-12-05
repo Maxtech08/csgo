@@ -1,27 +1,27 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="506" x="260" y="18">
+  <block type="movement_forward" id="1" x="260" y="18">
     <next>
-      <block type="robot_delay" id="508" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="515">
+          <block type="math_number" id="3">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_cleardisplay" id="588">
+          <block type="oled_cleardisplay" id="4">
             <next>
-              <block type="oled_linerect" id="562">
+              <block type="oled_linerect" id="5">
                 <field name="OBJECT">RECT</field>
                 <next>
-                  <block type="movement_stop" id="572">
+                  <block type="movement_stop" id="6">
                     <next>
-                      <block type="comment_comment" id="579">
+                      <block type="comment_comment" id="7">
                         <field name="TEXT">stop</field>
                         <next>
-                          <block type="oled_color" id="597">
+                          <block type="oled_color" id="8">
                             <field name="OBJECT">GREEN</field>
                             <next>
-                              <block type="oled_drawtext" id="638">
+                              <block type="oled_drawtext" id="9">
                                 <field name="TEXT">what else do you want</field>
                               </block>
                             </next>
