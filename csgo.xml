@@ -1,42 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="197" inline="false" x="197" y="68">
-    <value name="IF0">
-      <block type="sensor_button" id="272">
-        <field name="OBJECT">ENTER</field>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="movement_forward" id="102">
+  <block type="movement_forward" id="289" x="327" y="75">
+    <next>
+      <block type="oled_cleardisplay" id="343">
         <next>
-          <block type="movement_stop" id="175">
-            <next>
-              <block type="robot_delay" id="114" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="133">
-                    <field name="NUM">19</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_forward" id="144">
-                    <next>
-                      <block type="robot_delay" id="145" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="146">
-                            <field name="NUM">19</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_reverse" id="156"></block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
+          <block type="robot_delay" id="365" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="386">
+                <field name="NUM">12</field>
               </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="407"></block>
             </next>
           </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
