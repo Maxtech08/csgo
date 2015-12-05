@@ -10,7 +10,27 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="407"></block>
+              <block type="movement_stop" id="407">
+                <next>
+                  <block type="oled_drawtext" id="416">
+                    <field name="TEXT">hello</field>
+                    <next>
+                      <block type="robot_delay" id="440" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="441">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_drawtext" id="485">
+                            <field name="TEXT">Loosa</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
