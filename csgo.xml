@@ -20,6 +20,11 @@
                         <next>
                           <block type="oled_color" id="597">
                             <field name="OBJECT">GREEN</field>
+                            <next>
+                              <block type="oled_drawtext" id="638">
+                                <field name="TEXT">what else do you want</field>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
